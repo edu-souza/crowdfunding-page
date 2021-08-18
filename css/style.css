@@ -1,5 +1,6 @@
 body{
     font-size: 16px;
+    background-color: #e9e3e3;
 }
 img {
     max-width: 100%;
@@ -40,5 +41,29 @@ ul {
 }
 .lista-menu li:hover {
     transform: scale(1.1);
+    color: #fff;
+}
+/*##### MAIN CONTENT ##### */
+.main {
+    width: 40vw;
+    background-color: #Ffff;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.title {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.prgraph {
+    color:hsl(0, 0%, 48%);
+    font-family: 'Commissioner', sans-serif;
+}
+.btn {
+    border: none;
+    background-color: hsl(176, 72%, 28%);
+    padding: 1.48vw 1.75vw;
+    border-radius: 2.0vw;
+    font-family: 'Commissioner', sans-serif;
     color: #fff;
 }
