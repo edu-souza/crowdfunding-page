@@ -155,3 +155,7 @@ ul {
 .editions.disabled {
     border-color: rgb(224, 222, 222);
 }
+/*##### SELECT PLEDGE MODAL #####*/
+.top-line {
+    display: flex;
+}
