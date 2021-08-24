@@ -129,7 +129,7 @@ ul {
     font-family: 'Commissioner', sans-serif;
 }
 .editions {
-    border: solid 0.5px rgb(143, 143, 143);
+    border: solid 0.5px rgb(189, 188, 188);
     border-radius: 0.5vw;
     padding: 2.1vw;
     margin: 3.0vh auto;
@@ -158,4 +158,23 @@ ul {
 /*##### SELECT PLEDGE MODAL #####*/
 .top-line {
     display: flex;
+}
+.container-modal-select {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,0.5);
+    z-index: 2000;
+}
+.modal-select {
+    background-color: #fff;
+    width: 55vw;
+    border-radius: 10px;
+    margin: 120px auto;
+    padding: 7vh 5vw;
+}
+.modal-select h2:hover {
+    color:hsl(176, 72%, 28%);
 }
