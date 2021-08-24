@@ -1,12 +1,10 @@
 /*{
-    outline: 0.1px solid green;
-} */    
-*{
     box-sizing: border-box;
-}
+    outline: 0.1px solid red;
+} */  
 body{
     font-size: 16px;
-    background-color: #ececec;
+    background-color: #e9e3e3;
 }
 img {
     max-width: 100%;
@@ -51,29 +49,26 @@ ul {
     color: #fff;
 }
 /*##### MAIN CONTENT ##### */
-.content {
-    position: relative;
-    top: -15.28vh;
-}
 .main-title {
-    width: 50vw;
+    width: 40vw;
     background-color: #Ffff;
-    margin: 0 auto;
+    margin: 20vh auto 0 auto;
     border-radius: 10px;
     padding: 30px
 }
 .main {
-    width: 50vw;
+    width: 40vw;
     background-color: #Ffff;
-    margin: 5vh auto 0 auto;
+    margin: 5vh auto;
     border-radius: 10px;
-    padding: 3vw;
+    padding: 30px;
 }
 .main-stat {
-    width: 50vw;
+    width: 40vw;
     background-color: #Ffff;
-    margin: 5vh auto 0 auto;
+    margin: 20vh auto 0 auto;
     border-radius: 10px;
+    padding: 30px
 }
 .main-title h1,.main-title p {
     text-align: center;
@@ -90,59 +85,30 @@ ul {
 .buttons {
     padding: 10px 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-}
-.buttons button {
-    margin: 1vh 0;
 }
 .btn {
     border: none;
     background-color: hsl(176, 50%, 47%);
-    padding: 0 2vw;
-    border-radius: 7.0vw;
+    padding: 1.30vw 1.75vw;
+    border-radius: 3.0vw;
     font-family: 'Commissioner', sans-serif;
     color: #fff;
     cursor: pointer;
     transition: all 0.2s;
-    height: 9.20vh;
-    width: 176px;
 }
 .btn:hover {
     transform: scale(1.05);
     background-color: hsl(176, 72%, 28%);
 }
-
-/*### BOOKMARK BUTTON #### */
-.btnBook {
-    border: none;
+.status-bar {
     background-color: hsl(176, 50%, 47%);
-    padding: 0 1.75vw;
-    border-radius: 7.0vw;
-    font-family: 'Commissioner', sans-serif;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.2s;
-    height: 9.20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 2vh;
+    width: 20vw;
 }
-.btnBook.clicked {
-    background-color: #ececec;
-}
-.btnBook.clicked > span {
-    color:hsl(176, 72%, 28%);
-}
-.book-icon {
-    position: relative;
-    left: -22px;
-}
-
 /*##### STATISTICS ##### */
 .stat {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 .stat div:nth-child(2) {
@@ -150,39 +116,20 @@ ul {
     border-right: 0.5px solid rgb(143, 143, 143); 
 }
 .stat-div {
-    flex: 0 0 160px;
-    padding : 0 2.60vh;
-    margin: 5vh 0;
+    flex: 1 1 14.78vw;
+    padding : 1.83vh 2.73vh;
     text-align: left;
-    max-height: 7.82vh;
 }
 .stat-div p:nth-child(1) {
     font-size: 1.8rem;
-}
-.status-bar {
-    background-color: rgb(224, 222, 222);
-    height: 2vh;
-    width: 60vw;
-    border-radius: 3.0vw;
-    margin: 5vh;
-}
-.progress{
-    background-color: hsl(176, 50%, 47%);
-    display: block;
-    height: 2vh;
-    width: 75%;
-    border-radius: 3.0vw;
 }
 /*##### SECONDARY CONTENT ##### */
 .pledge {
     color: hsl(176, 50%, 47%);
     font-family: 'Commissioner', sans-serif;
 }
-.pledge:hover {
-    color: hsl(176, 72%, 28%);
-}
 .editions {
-    border: solid 0.5px rgb(143, 143, 143);
+    border: solid 0.5px rgb(189, 188, 188);
     border-radius: 0.5vw;
     padding: 2.1vw;
     margin: 3.0vh auto;
@@ -196,11 +143,7 @@ ul {
 }
 .info-btn {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-}
-.info-btn div {
-    flex: 0 0 17.54vw;
 }
 /*##### Disabled Styles #####*/
 .btn.disabled {
@@ -212,34 +155,26 @@ ul {
 .editions.disabled {
     border-color: rgb(224, 222, 222);
 }
-.pledge.disabled {
-    color: hsl(176, 48%, 62%);
+/*##### SELECT PLEDGE MODAL #####*/
+.top-line {
+    display: flex;
 }
-
-/*##### MODAL THANKS ##### */
-.modal-container {
-    width: 100vw;
-    height: 100vh;
+.container-modal-select {
     position: fixed;
+    height: 100%;
+    width: 100%;
     top: 0px;
     left: 0px;
-    background-color: rgba(0,0,0,.5);
+    background: rgba(0,0,0,0.5);
     z-index: 2000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.modal-thanks {
-    height: 50vh;
-    width: 35.85vw;
+.modal-select {
     background-color: #fff;
+    width: 55vw;
     border-radius: 10px;
-    text-align: center;
-    padding: 2vh 2vw;
+    margin: 120px auto;
+    padding: 7vh 5vw;
 }
-.modal-thanks img {
-    padding: 2vh 2vw;
-}
-.modal-thanks button {
-    width: 120px;
+.modal-select h2:hover {
+    color:hsl(176, 72%, 28%);
 }
