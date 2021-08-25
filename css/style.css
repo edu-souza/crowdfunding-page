@@ -104,14 +104,11 @@ ul {
     transform: scale(1.05);
     background-color: hsl(176, 72%, 28%);
 }
-.status-bar {
-    background-color: hsl(176, 50%, 47%);
-    height: 2vh;
-    width: 20vw;
-}
+
 /*##### STATISTICS ##### */
 .stat {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .stat div:nth-child(2) {
@@ -119,12 +116,26 @@ ul {
     border-right: 0.5px solid rgb(143, 143, 143); 
 }
 .stat-div {
-    flex: 1 1 14.78vw;
+    flex: 1 1 160px;
     padding : 1.83vh 2.73vh;
     text-align: left;
 }
 .stat-div p:nth-child(1) {
     font-size: 1.8rem;
+}
+.status-bar {
+    background-color: rgb(224, 222, 222);
+    height: 2vh;
+    width: 60vw;
+    border-radius: 3.0vw;
+    margin: 5vh;
+}
+.progress{
+    background-color: hsl(176, 50%, 47%);
+    display: block;
+    height: 2vh;
+    width: 75%;
+    border-radius: 3.0vw;
 }
 /*##### SECONDARY CONTENT ##### */
 .pledge {
@@ -167,6 +178,7 @@ ul {
     left: 0px;
     background: rgba(0,0,0,0.5);
     z-index: 2000;
+    display: none;
     overflow-y: initial;
 }
 .modal-select {
@@ -208,21 +220,4 @@ ul {
 }
 .qtd span:nth-child(2){
     margin-left: 0.8vw;
-}
-.container-edition input[type="radio"] {
-    opacity: 1;
-    width: 100%;
-}
-.container-edition input[type="radio"]:checked {
-    background-color:#bfb;
-    border-color: #4c4;
-}
-.container-edition label {
-    display: inline-block;
-    background-color: #ddd;
-    padding: 10px 20px;
-    font-family: sans-serif, Arial;
-    font-size: 16px;
-    border: 2px solid #444;
-    border-radius: 4px;
 }
